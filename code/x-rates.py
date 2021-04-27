@@ -39,6 +39,7 @@ for currency_from in XRATES.keys():
 
 
 file_name = date.today().strftime('%Y-%m-%d')
+XRATES = {'date': file_name, 'rates': XRATES}
 with open(os.path.join(XRATES_FOLDER, file_name), 'w', encoding='utf-8') as xrates_file:
     json.dump(XRATES, xrates_file, ensure_ascii=False, indent=4)
 
