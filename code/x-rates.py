@@ -38,9 +38,9 @@ for currency_from in XRATES.keys():
             sys.exit(3)  # at least one error in getting currency exchange rates
 
 
-file_name = date.today().strftime('%Y-%m-%d')
-XRATES = {'date': file_name, 'rates': XRATES}
-with open(os.path.join(XRATES_FOLDER, file_name), 'w', encoding='utf-8') as xrates_file:
+file_path = date.today().strftime('%Y/%m/%d')  # Linux!
+XRATES = {'date': file_path, 'rates': XRATES}
+with open(os.path.join(XRATES_FOLDER, file_path), 'w', encoding='utf-8') as xrates_file:
     json.dump(XRATES, xrates_file, ensure_ascii=False, indent=4)
 
 sys.exit(0)

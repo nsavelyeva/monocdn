@@ -15,13 +15,13 @@ curl https://raw.githubusercontent.com/nsavelyeva/monocdn/main/x-rates/latest
 ```
 or:
 ```
-curl https://raw.githubusercontent.com/nsavelyeva/monocdn/main/x-rates/2021-04-27
+curl https://raw.githubusercontent.com/nsavelyeva/monocdn/main/x-rates/2021/04/27
 ```
 
 Example content will look like:
 ```
 {
-    "date": "2021-04-27",
+    "date": "2021/04/27",
     "rates": {
         "BYN": {
             "RUB": 29.226789,
