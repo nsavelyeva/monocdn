@@ -1,7 +1,7 @@
 name: Get todays Currencies X-Rates
-on:
-  schedule:
-    - cron: "0 10 * * *"
+on: none
+#  schedule:
+#    - cron: "0 10 * * *"
 
 jobs:
   build:
