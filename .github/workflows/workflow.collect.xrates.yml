@@ -1,5 +1,5 @@
 name: Get todays Currencies X-Rates
-on: none
+on: workflow_dispatch
 #  schedule:
 #    - cron: "0 10 * * *"
 
